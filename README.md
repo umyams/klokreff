@@ -1,52 +1,51 @@
 1. Clone the Repository
 
-git clone https://github.com/yourusername/klokreff.git
-cd klokreff
+  git clone https://github.com/yourusername/klokreff.git
+  cd klokreff
 
 2. Set Up Virtual Environment
-python3 -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
 
-3. Install Dependencies
-pip install requests web3.py eth-account colorama
+  python3 -m venv venv
+  source venv/bin/activate  # Windows: venv\Scripts\activate
 
-4. Prepare Input Files
-refs.txt (Required)
-Create refs.txt in the project root with referral codes or URLs, one per line:
-example : 
-https://klokapp.ai?referral_code=ANOTHERCODE
+4. Install Dependencies
+  pip install requests web3.py eth-account colorama
 
-5. Verify Compatibility
-Check versions to avoid warnings:
+5. Prepare Input Files
+  refs.txt (Required)
+  Create refs.txt in the project root with referral codes or URLs, one per line:
+  example : 
+  https://klokapp.ai?referral_code=ANOTHERCODE
 
-pip show requests urllib3 chardet
+6. Verify Compatibility
+  Check versions to avoid warnings:
 
-Recommended:
-requests==2.32.3
+  pip show requests urllib3 chardet
 
-urllib3==1.26.18
+  Recommended:
+  requests==2.32.3
 
-chardet==4.0.0
-Pin if needed:
+  urllib3==1.26.18
 
-pip install requests==2.32.3 urllib3==1.26.18 chardet==4.0.0
+  chardet==4.0.0
+  Pin if needed:
+
+  pip install requests==2.32.3 urllib3==1.26.18 chardet==4.0.0
 
 Usage
-Run the script:
-bash
+  Run the script:
 
-python start.py
+  python start.py
 
-Enter the number of accounts to generate (max 100 per referral code).
+  Enter the number of accounts to generate (max 100 per referral code).
 
-Monitor progress in the console.
+  Monitor progress in the console.
 
-Output
-Logs: Color-coded updates for each wallet.
+  Output
+  Logs: Color-coded updates for each wallet.
 
-Files: klok_<referral_code>.txt with <private_key>:<address> entries.
+  Files: klok_<referral_code>.txt with <private_key>:<address> entries.
 
-Troubleshooting
 
 
 
