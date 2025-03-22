@@ -6,7 +6,7 @@
 2. Set Up Virtual Environment
 
   python3 -m venv venv
-  source venv/bin/activate  # Windows: venv\Scripts\activate
+  source venv/bin/activate  
 
 4. Install Dependencies
   pip install requests web3.py eth-account colorama
